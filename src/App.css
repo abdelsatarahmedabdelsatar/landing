@@ -39,8 +39,9 @@
 
 .back_img {
   background-image: url(images/home_back.png);
-  background-size:cover; /* This will make sure the background image covers the entire container */
-  background-repeat: no-repeat;   width: 100%;
+  background-size: cover; /* This will make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+  width: 100%;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -49,7 +50,27 @@
   height: 450px;
   top: 30px;
   margin: auto;
-  border: 4.5px solid rgb(15, 96, 15);
+  /* border: 4.5px solid rgb(15, 96, 15); */
   border-radius: 30px;
   backdrop-filter: blur(50px);
+  clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+}
+.back_div {
+  background: linear-gradient(
+    90deg,
+    rgb(0 96 71 / 93%) 0%,
+    rgb(109 172 109) 100%
+  );
+}
+
+@media (min-width: 640px) {
+  .home_div {
+    clip-path: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home_div {
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+  }
 }

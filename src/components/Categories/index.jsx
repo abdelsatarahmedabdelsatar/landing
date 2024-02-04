@@ -1,4 +1,4 @@
-import img from "./../../images/categories/1.png";
+import img from "./../../images/categories/services.png";
 import img2 from "./../../images/categories/2.png";
 import img3 from "./../../images/categories/3.png";
 import img4 from "./../../images/categories/4.png";
@@ -6,7 +6,7 @@ import Child from "./Child";
 
 function Categories() {
   const catArr = [
-    { img: img, title: "Agriculture Products" },
+    { img: img, title: "24 hour service" },
     { img: img2, title: "Different live stock" },
     { img: img3, title: "Modern Tecnology" },
     { img: img4, title: "Faster delivery" },

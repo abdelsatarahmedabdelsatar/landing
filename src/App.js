@@ -2,26 +2,16 @@ import "./App.css";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Categories from "./components/Categories";
+import Vision from "./components/vision/Vision";
+import Mission from "./components/mission/Mission";
+import Services from "./components/services/Services";
+import Experience from "./components/experience/Experience";
+import Asome from "./components/awsome/Asome";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactUs from "./components/contactus/ContactUs";
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
     <>
       <Router>
         <Routes>
@@ -32,6 +22,12 @@ function App() {
         </Routes>
       </Router>
       <Categories />
+      <Asome />
+      <Vision />
+      <Services />
+      <Mission />
+      <Experience />
+      <ContactUs />
       <Footer />
     </>
   );

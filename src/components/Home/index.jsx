@@ -13,30 +13,28 @@ function Home() {
   return (
     <>
       <div className="back_img">
-        <div className="home_div pt-5">
+        <div className="home_div  relative pt-5 z-10">
           <span className="inline ms-5 me-5 pt-2 cursor-pointer ">
-            <img src={img} width="50" height="50" alt="tree icon" />
+            <img src={img} width="70" height="70" alt="tree icon" />
           </span>
           <Ul routes={arr_route} />
 
-          <div className="grid md:grid-cols-2 grid-cols-1 m-16 text-white ">
-            <div className="sm:grid-cols-2 grid-cols-12">
-              <h1 className="text-4xl font-bold">The Green Yard</h1>
+          <div className="flex m-16 text-white ">
+            <div className="w-[70%]">
+              <h1 className="text-4xl font-bold ">The Green Yard</h1>
               <p className="mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                fuga impedit, corrupti enim harum repellat id laudantium
-                perspiciatis hic alias dolorum laboriosam.
+                Our company provides comprehensive livestock logistics
+                throughout the United Arab Emirates. We deliver safe and
+                efficient animal transportation
               </p>
 
               <button className="border-2 border-white  p-1 ps-4 pe-4 mt-4 hover:text-gray-300 hover:border-gray-300">
                 Read More
               </button>
             </div>
-            <div className="hidden md:inline">
-              <img src={img2} alt="lang image" className="pl-5" width="500px" />
-            </div>
           </div>
         </div>
+        <div className=" bg-white absolute right-48  top-32 sm:hidden md:block back_div h-80 w-80 z-0 rounded-2xl rotate-12"></div>
       </div>
     </>
   );
