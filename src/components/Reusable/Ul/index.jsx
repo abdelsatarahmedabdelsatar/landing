@@ -10,7 +10,7 @@ function Ul({ routes }) {
               key={i}
               className="inline-block ms-5 hover:text-yellow-500 font-bold cursor-pointer"
             >
-              <Link to={"/" + r.route}>{r.title}</Link>
+              <a href={"#" + r.route}>{r.title}</a>
             </li>
           );
         })}

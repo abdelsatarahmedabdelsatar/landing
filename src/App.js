@@ -33,8 +33,9 @@ function App() {
             <Routes>
               <Route path="/" Component={Home} />
               <Route path="/home" Component={Home} />
-              <Route path="/contact" Component={Home} />
-              <Route path="/services" Component={Home} />
+              <Route path="/contact" Component={ContactUs} />
+              <Route path="/services" Component={Services} />
+              <Route path="/about" Component={Experience} />
             </Routes>
           </Router>
           <Categories />

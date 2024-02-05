@@ -4,10 +4,46 @@ import conatct from "../../contact.json";
 import gmail from "../../images/Animation - 1707000297621.json";
 import watsapp from "../../images/Animation - 1707000348040.json";
 import location from "../../images/Animation - 1707000451498.json";
+import emailjs from 'emailjs-com';
+import { useRef } from "react";
 
 const ContactUs = () => {
+
+  const form = useRef();
+
+  const sendMail = (e)=> {
+
+    e.preventDefault();
+    // if (
+    //   nameCheck &&
+    //   phoneCheck &&
+    //   messageCheck &&
+    //   document.getElementById("name1").value !== "" &&
+    //   document.getElementById("phone1").value !== ""
+    // ) {
+    //   setLoading(true);
+      emailjs
+        .sendForm(
+          // "service_vg00od9",
+          // "template_df609bk",
+          form.current,
+          // "QaFtbp2lXayO2eJSb"
+        )
+        .then(
+          () => {
+            setTimeout(function () {
+              window.location.href = "/";
+            }, 2500);
+
+          },
+          (error) => {
+            alert(error.text);
+          }
+        );
+  }
+
   return (
-    <div className="flex justify-between lg:flex-row  sm:flex-col">
+    <div id="contact" className="flex justify-between lg:flex-row  sm:flex-col">
       <div className="bg-[#48866dd9] w-full text-center py-10  ">
         <h2 className="font-extrabold text-6xl py-4 text-gray-100">Contacts</h2>
         <p className="font-bold text-3xl py-2 text-gray-200">Company owner:</p>
@@ -48,7 +84,7 @@ const ContactUs = () => {
           <br /> To Know More About Our Services
         </p>
         <div className="flex justify-around py-10">
-          <form>
+          <form ref={form} onSubmit={sendMail}>
             <input
               type="text"
               placeholder="Name"

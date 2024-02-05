@@ -12,7 +12,7 @@ const Vision = () => {
     }
   }, [isInView]);
   return (
-    <div className="container mx-auto   px-4 py-4">
+    <div id="about" className="container mx-auto   px-4 py-4">
       <div className="flex text-left  items-center  sm:flex-col  px-4 xl:flex-row ">
         <div className="w-[30%]">
           <div className="img__wrapper w-80 h-96 mt-16  relative">

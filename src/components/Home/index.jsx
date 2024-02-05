@@ -34,7 +34,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" bg-white absolute right-48  top-32 sm:hidden md:block back_div h-80 w-80 z-0 rounded-2xl rotate-12"></div>
+        <div className=" bg-white absolute right-48  top-32 hidden sm:block back_div h-80 w-80 z-0 rounded-2xl rotate-12"></div>
       </div>
     </>
   );

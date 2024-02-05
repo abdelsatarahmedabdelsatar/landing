@@ -12,7 +12,7 @@ const Services = () => {
     }
   }, [isInView]);
   return (
-    <div className="container mx-auto py-4 my-9 px-4">
+    <div id = "services" className="container mx-auto py-4 my-9 px-4">
       <div className="flex text-left   items-center sm:flex-col  px-4 xl:flex-row relative  ">
         <motion.div
           ref={ref}
