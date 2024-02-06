@@ -14,8 +14,8 @@ function Home() {
     <>
       <div className="back_img">
         <div className="home_div  relative pt-5 z-10">
-          <span className="inline ms-5 me-5 pt-2 cursor-pointer ">
-            <img src={img} width="70" height="70" alt="tree icon" />
+          <span className="hidden sm:inline ms-5 me-5 pt-2 cursor-pointer ">
+            <img src={img} width="80" height="80" alt="tree icon" />
           </span>
           <Ul routes={arr_route} />
 
@@ -34,7 +34,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=" bg-white absolute right-48  top-32 xs:hidden md:block back_div h-80 w-80 z-0 rounded-2xl rotate-12"></div>
+        <div className=" bg-white absolute  right-48  top-32 xs:hidden md:block back_div h-80 w-80 z-0 rounded-2xl rotate-12"></div>
       </div>
     </>
   );
