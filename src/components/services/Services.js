@@ -12,7 +12,7 @@ const Services = () => {
     }
   }, [isInView]);
   return (
-    <div className="md:container mx-auto py-4 my-9 md:px-4">
+    <div className="md:container mx-auto py-4 my-9 md:px-4" id="services">
       <div className="flex xl:text-left text-center justify-center  items-center xs:flex-col  md:px-4 xl:flex-row relative  ">
         <div className="block xl:hidden">
           <div className="img__wrapper md:w-80 w-72 md:h-96 h-80 mt-16 relative">

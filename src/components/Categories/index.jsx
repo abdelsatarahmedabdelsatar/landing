@@ -15,10 +15,8 @@ function Categories() {
     <>
       <div
         style={{ backgroundColor: "#6DAC6D" }}
-        className="grid grid-cols-2 md:grid-cols-6 gap-0 place-content-center"
+        className="flex sm:flex-row xs:flex-col mx-auto xs:justify-center sm:justify-around items-center"
       >
-        <div className="md:inline hidden"></div>
-
         {catArr.map((c, i) => {
           return <Child img={c.img} title={c.title} />;
         })}

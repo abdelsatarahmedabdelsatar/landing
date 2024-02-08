@@ -12,15 +12,33 @@ import ContactUs from "./components/contactus/ContactUs";
 import { useState } from "react";
 import { useEffect } from "react";
 import { HashLoader } from "react-spinners";
+import scrollToTop from "./images/scrollToTop.json";
+import Lottie from "lottie-react";
 
 function App() {
   let [loading, setLoading] = useState(false);
+  let [visible, setVisible] = useState(false);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    });
+  }, []);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       {loading ? (
@@ -29,14 +47,15 @@ function App() {
         </div>
       ) : (
         <>
-          <Router>
+          {/* <Router>
             <Routes>
               <Route path="/" Component={Home} />
               <Route path="/home" Component={Home} />
               <Route path="/contact" Component={Home} />
               <Route path="/services" Component={Home} />
             </Routes>
-          </Router>
+          </Router> */}
+          <Home />
           <Categories />
           <Asome />
           <Vision />
@@ -45,6 +64,18 @@ function App() {
           <Experience />
           <ContactUs />
           <Footer />
+          {visible ? (
+            <button
+              onClick={goToTop}
+              className="z-50 bg-[#298d29] text-white text-center text-xl fixed bottom-10 right-10 "
+            >
+              <Lottie
+                className="contact__animation"
+                animationData={scrollToTop}
+                style={{ height: 70 }}
+              />
+            </button>
+          ) : null}
         </>
       )}
     </>

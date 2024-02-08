@@ -3,7 +3,7 @@ import "./Asome.css";
 
 const Asome = () => {
   return (
-    <div className="conatiner mx-auto">
+    <div className="conatiner mx-auto" id="about">
       <div className="flex ">
         <div className="w-full relative xl:left-9 sm:left-0  lg:text-left xs:text-center">
           <p className="md:text-7xl xs:text-5xl font-bold text-[#0000007e] py-2">

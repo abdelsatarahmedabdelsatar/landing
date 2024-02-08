@@ -8,9 +8,9 @@ function Ul({ routes }) {
           return (
             <li
               key={i}
-              className="inline-block ms-5 hover:text-yellow-500 font-bold cursor-pointer"
+              className="inline-block xs:ms-2 sm:ms-5 hover:text-yellow-500 font-bold cursor-pointer"
             >
-              <Link to={"/" + r.route}>{r.title}</Link>
+              <a href={"#" + r.route}>{r.title}</a>
             </li>
           );
         })}

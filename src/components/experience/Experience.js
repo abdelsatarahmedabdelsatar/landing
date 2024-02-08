@@ -14,8 +14,8 @@ const Experience = () => {
     }
   });
   return (
-    <div className="experience__wrapper text-center relative sm:h-[34rem] xs:h-[130vh] mt-20 ">
-      <div className="absolute top-0 right-0  sm:h-[34rem] xs:h-[130vh]  w-full z-10  bg-black opacity-60"></div>
+    <div className="experience__wrapper text-center relative sm:h-[34rem]  mt-20 ">
+      <div className="absolute top-0 right-0  sm:h-[34rem] xs:h-[100%]  w-full z-10  bg-black opacity-60"></div>
       <motion.div
         className="sm:container mx-auto px-4 z-10 relative"
         variants={{
