@@ -1,9 +1,14 @@
 import Ul from "./../Reusable/Ul/index";
 import img from "../../images/tree_icon.png";
 import img2 from "../../images/112.png";
+import { useContext } from 'react';
+import LangContext from "../../context";
 
 function Home() {
   // const arr_route = ["Home", "Services", "About us", "Contact us"]
+  const { lang } = useContext(LangContext);
+
+  
   const arr_route = [
     { route: "home", title: "Home" },
     { route: "services", title: "Services" },
@@ -12,7 +17,7 @@ function Home() {
   ];
   return (
     <>
-      <div className="back_img" id="home">
+      <div dir={lang=='en'?'ltr':'rtl'} className="back_img" id="home">
         <div className="home_div xs:text-center sm:text-left relative pt-5 z-10">
           <span className="hidden xs:inline xs:h-12 sm:ms-5 sm:me-5 pt-2 cursor-pointer ">
             <img

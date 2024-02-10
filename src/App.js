@@ -14,10 +14,13 @@ import { useEffect } from "react";
 import { HashLoader } from "react-spinners";
 import scrollToTop from "./images/scrollToTop.json";
 import Lottie from "lottie-react";
+import Navbar from './components/Navbar/index';
+import { LangContextProvider } from './context/index';
 
 function App() {
   let [loading, setLoading] = useState(false);
   let [visible, setVisible] = useState(false);
+  
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -40,13 +43,14 @@ function App() {
     });
   };
   return (
-    <>
+    <div>
       {loading ? (
         <div className="">
           <HashLoader color="#36d7b7" style={{ display: "contents" }} />
         </div>
       ) : (
         <>
+        <LangContextProvider>
           {/* <Router>
             <Routes>
               <Route path="/" Component={Home} />
@@ -55,6 +59,7 @@ function App() {
               <Route path="/services" Component={Home} />
             </Routes>
           </Router> */}
+          <Navbar/>
           <Home />
           <Categories />
           <Asome />
@@ -76,9 +81,10 @@ function App() {
               />
             </button>
           ) : null}
+          </LangContextProvider>
         </>
       )}
-    </>
+    </div>
   );
 }
 
