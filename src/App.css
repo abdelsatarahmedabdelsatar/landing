@@ -36,7 +36,34 @@ html {
     transform: rotate(360deg);
   }
 }  */
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 191, 59, 0.62);
+  outline: 1px solid rgba(53, 136, 76, 0.191);
+  border-radius: 15%;
+}
+.catedoeies__div {
+  background-image: url(images/liquid-cheese.svg);
+  background-size: cover; /* This will make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+}
+.contactLeft__section {
+  background-image: url(images/abstract-envelope.svg);
+  background-size: cover; /* This will make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+}
+.contactRight__section {
+  background-image: url(images/sun-tornado.svg);
+  background-size: cover; /* This will make sure the background image covers the entire container */
+  background-repeat: no-repeat;
+}
 .back_img {
   background-image: url(images/home_back.png);
   background-size: cover; /* This will make sure the background image covers the entire container */
@@ -54,7 +81,6 @@ html {
   /* border: 4.5px solid rgb(15, 96, 15); */
   border-radius: 30px;
   backdrop-filter: blur(50px);
-  clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
 }
 @media (min-width: 320px) {
   .home_div {
@@ -71,14 +97,12 @@ html {
 
 @media (min-width: 320px) {
   .home_div {
-    clip-path: none;
-    width: 80%;
+    width: 100%;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .home_div {
-    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+    width: 80%;
   }
 }
 /*******Animation********/
@@ -99,11 +123,12 @@ html {
 }
 
 .ball {
-  background-color: #d9cc55;
-  border-radius: 50%;
-  height: 3rem;
+  background: url("./images/122.png");
+  border-radius: 33%;
+  height: 8rem;
   position: absolute;
-  width: 3rem;
+  background-size: cover;
+  width: 8rem;
 }
 
 /* Square */
@@ -116,7 +141,7 @@ html {
   background-color: rgb(8 255 107 / 52%);
   border-radius: 50%;
   bottom: 2rem;
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 8px rgb(0 245 121 / 71%);
   content: "";
   height: 0.1rem;
   left: 41%;

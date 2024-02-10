@@ -34,6 +34,11 @@ const Services = () => {
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
           <h2 className="font-bold text-5xl py-7">Services</h2>
+          <main class="card-container  xl:block hidden">
+            <div class="card ball-bouncing">
+              <div class="ball"></div>
+            </div>
+          </main>
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
             Our company provides comprehensive livestock logistics throughout
             the United Arab Emirates

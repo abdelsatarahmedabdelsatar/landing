@@ -33,11 +33,7 @@ const Mission = () => {
           initial="hidden"
         >
           <h2 className="font-bold text-5xl py-7">Mission</h2>
-          <main class="card-container  xl:block hidden">
-            <div class="card ball-bouncing">
-              <div class="ball"></div>
-            </div>
-          </main>
+
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
             Our mission is to revolutionize the agricultural sector by
             pioneering the use of electric vehicles for livestock

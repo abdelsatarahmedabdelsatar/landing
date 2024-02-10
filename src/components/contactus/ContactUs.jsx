@@ -45,7 +45,7 @@ const ContactUs = () => {
 
   return (
     <div id="contact" className="flex justify-between lg:flex-row  xs:flex-col">
-      <div className="bg-[#48866dd9] w-full text-center py-10  ">
+      <div className="contactLeft__section contactLeft__section w-full text-center py-10  ">
         <h2 className="font-extrabold text-6xl py-4 text-gray-100">Contacts</h2>
         <p className="font-bold text-3xl py-2 text-gray-200">Company owner:</p>
         <p className="font-bold text-2xl text-gray-200 py-2">
@@ -76,7 +76,7 @@ const ContactUs = () => {
           salehallabi@gmail.com :
         </p>
       </div>
-      <div className="bg-[#48866d] w-full py-10 text-center text-white">
+      <div className=" contactRight__section w-full py-10 text-center text-white">
         <h2 className="font-extrabold text-6xl py-4 px-6 text-gray-100">
           Get In Touch
         </h2>

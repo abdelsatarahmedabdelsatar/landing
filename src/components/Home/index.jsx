@@ -1,6 +1,6 @@
 import Ul from "./../Reusable/Ul/index";
 import img from "../../images/tree_icon.png";
-import img2 from "../../images/land.png";
+import img2 from "../../images/112.png";
 
 function Home() {
   // const arr_route = ["Home", "Services", "About us", "Contact us"]
@@ -23,8 +23,8 @@ function Home() {
           </span>
           <Ul routes={arr_route} />
 
-          <div className="flex m-16 text-white ">
-            <div className="sm:w-[70%]">
+          <div className="flex m-8 text-white ">
+            <div className="sm:w-[70%] mt-8">
               <h1 className="text-4xl font-bold ">The Green Yard</h1>
               <p className="mt-5">
                 Our company provides comprehensive livestock logistics
@@ -36,9 +36,11 @@ function Home() {
                 Read More
               </button>
             </div>
+            <div className=" hidden md:block">
+              <img src={img2} alt="" />
+            </div>
           </div>
         </div>
-        <div className=" bg-white absolute  right-48  top-32 xs:hidden md:block back_div h-80 w-80 z-0 rounded-2xl rotate-45"></div>
       </div>
     </>
   );

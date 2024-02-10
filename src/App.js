@@ -67,7 +67,7 @@ function App() {
           {visible ? (
             <button
               onClick={goToTop}
-              className="z-50 bg-[#298d29] text-white text-center text-xl fixed bottom-10 right-10 "
+              className="z-50 bg-[#009720] text-white text-center text-xl rounded-2xl fixed bottom-10 right-10 "
             >
               <Lottie
                 className="contact__animation"
