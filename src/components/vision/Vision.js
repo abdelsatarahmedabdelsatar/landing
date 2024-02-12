@@ -16,12 +16,12 @@ const Vision = () => {
   }, [isInView]);
   return (
     <div className="md:container  mx-auto   px-4 py-4">
-      <div className="flex xl:text-left text-center items-center justify-center  xs:flex-col  md:px-4 xl:flex-row ">
+      <div className="flex xl:text-start  text-center items-center justify-center  xs:flex-col  md:px-4 xl:flex-row ">
         <div className="md:w-[30%]">
           <div className="img__wrapper md:w-80 w-72 md:h-96 h-80 mt-16  relative mx-auto">
             <img
               src=" ./vision.png"
-              className="absolute md:h-96 sm:h-80 left-6 top-3"
+              className="absolute md:h-96 sm:h-80 start-6 top-3"
             />
           </div>
         </div>
@@ -36,8 +36,7 @@ const Vision = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
-<<<<<<< HEAD
-          <h2 className="font-bold text-5xl py-7">{t("Vision")}</h2>
+        <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Vision")}</h2>
           <main class="card-container xl:block hidden">
             <div class="card square-card">
               <div class="down">
@@ -46,17 +45,6 @@ const Vision = () => {
                     <div class="rotate-in">
                       <div class="rotate-out">
                         <div class="square"></div>
-=======
-          <h2 className="font-bold text-5xl py-7">Vision</h2>
-          <main className="card-container xl:block hidden">
-            <div className="card square-card">
-              <div className="down">
-                <div className="up">
-                  <div className="squeeze">
-                    <div className="rotate-in">
-                      <div className="rotate-out">
-                        <div className="square"></div>
->>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
                       </div>
                     </div>
                   </div>

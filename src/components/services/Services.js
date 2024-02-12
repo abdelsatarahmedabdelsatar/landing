@@ -16,12 +16,12 @@ const Services = () => {
   }, [isInView]);
   return (
     <div className="md:container mx-auto py-4 my-9 md:px-4" id="services">
-      <div className="flex xl:text-left text-center justify-center  items-center xs:flex-col  md:px-4 xl:flex-row relative  ">
+      <div className="flex xl:text-start text-center justify-center  items-center xs:flex-col  md:px-4 xl:flex-row relative  ">
         <div className="block xl:hidden">
           <div className="img__wrapper md:w-80 w-72 md:h-96 h-80 mt-16 relative">
             <img
               src=" ./services.png"
-              className="absolute md:h-96 sm:h-80 left-6 top-3"
+              className="absolute md:h-96 sm:h-80 start-6 top-3"
             />
           </div>
         </div>
@@ -36,17 +36,12 @@ const Services = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
-<<<<<<< HEAD
-          <h2 className="font-bold text-5xl py-7">{t("Services")}</h2>
+
+          <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Services")}</h2>
           <main class="card-container  xl:block hidden">
             <div class="card ball-bouncing">
               <div class="ball"></div>
-=======
-          <h2 className="font-bold text-5xl py-7">Services</h2>
-          <main className="card-container  xl:block hidden">
-            <div className="card ball-bouncing">
-              <div className="ball"></div>
->>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
+
             </div>
           </main>
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
@@ -67,7 +62,7 @@ const Services = () => {
         </motion.div>
         <div className="xl:block hidden w-[30%]">
           <div className="img__wrapper w-80 h-96 mt-16 relative">
-            <img src=" ./services.png" className="absolute h-96 left-6 top-3" />
+            <img src=" ./services.png" className="absolute h-96 start-6 top-3" />
           </div>
         </div>
         <img

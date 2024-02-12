@@ -1,4 +1,5 @@
 {
+
   "Home": "Home",
   "Services": "Services ",
   "About us": "About us",
@@ -34,5 +35,9 @@
   "Get In Touch": "Get In Touch",
   "Send Message to Us": "Send Message to Us",
   "To Know More About Our Services": "To Know More About Our Services",
-  "Send Message ": "Send Message"
+  "Send Message": "Send Message",
+  "name": "name",
+  "email": "email",
+  "message": "message",
+  "footer":"This Website Created by"
 }

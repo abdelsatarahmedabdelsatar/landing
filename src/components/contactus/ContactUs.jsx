@@ -13,7 +13,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const sendMail = (e) => {
     e.preventDefault();
@@ -95,7 +95,7 @@ const ContactUs = () => {
           <form ref={form} onSubmit={sendMail}>
             <input
               type="text"
-              placeholder="Name"
+              placeholder={t("name")}
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -104,14 +104,14 @@ const ContactUs = () => {
             <input
               type="text"
               name="email"
-              placeholder="E-mail"
+              placeholder={t("email")}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="block mx-auto my-3 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
             <textarea
               type=""
-              placeholder="Message"
+              placeholder={t("message")}
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

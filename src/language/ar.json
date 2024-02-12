@@ -14,7 +14,7 @@
   "24 hour service": "خدمة 24 ساعة",
   "Different live stock": "مخزون حي مختلف",
   "Green Tecnology": "التكنولوجيا الصديقة للبيئة",
-  "Faster delivery": "Faster delivery",
+  "Faster delivery": "وصول أسرع",
 
   "Vision": "رؤيتنا",
   "Our vision is to be at the forefront of clean energy adoption in the agricultural sector, accelerating the transition towards sustainable practices.": "رؤيتنا هي أن نكون في طليعة اعتماد الطاقة النظيفة في القطاع الزراعي، وتسريع التحول نحو الممارسات المستدامة.",
@@ -36,5 +36,9 @@
   "Get In Touch": "ابقى على تواصل",
   "Send Message to Us": "أرسل رسالة إلينا",
   "To Know More About Our Services": " لمعرفة المزيد عن خدماتنا",
-  "Send Message ": "أرسل رسالة إلينا"
+  "Send Message": "أرسل رسالة إلينا",
+  "name": "الإسم",
+  "email": "البريد الإلكتروني",
+  "message": "رسالتك",
+  "footer":"هذا الموقع تم إنشاؤه بواسطة"
 }

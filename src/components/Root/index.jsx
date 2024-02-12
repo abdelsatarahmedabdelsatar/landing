@@ -49,7 +49,7 @@ function Root() {
             </Routes>
           </Router> */}
       <Navbar />
-      <div dir={lang=='en'?'ltr':'rtl'}>
+      <div dir={lang=='ar'?'rtl':'ltr'}>
       <Home />
       <Categories />
       <Asome />
@@ -62,7 +62,7 @@ function Root() {
       {visible ? (
         <button
           onClick={goToTop}
-          className="z-50 bg-[#009720] text-white text-center text-xl rounded-2xl fixed bottom-10 right-10 "
+          className="z-50 bg-[#009720] text-white text-center text-xl rounded-full fixed bottom-10 right-10 "
         >
           <Lottie
             className="contact__animation"

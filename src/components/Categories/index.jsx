@@ -13,12 +13,12 @@ function Categories() {
   ];
   return (
     <>
-      <div className=" catedoeies__div flex sm:flex-row xs:flex-col mx-auto  xs:justify-center sm:justify-around xs:items-center md:items-stretch">
+      <div className=" catedoeies__div flex sm:flex-row xs:flex-col mx-auto  xs:justify-center sm:justify-evenly xs:items-center md:items-stretch">
         {catArr.map((c, i) => {
           return <Child key={i} img={c.img} title={c.title} />;
         })}
 
-        <div className="md:inline hidden"></div>
+        {/* <div className="md:inline hidden"></div> */}
       </div>
     </>
   );

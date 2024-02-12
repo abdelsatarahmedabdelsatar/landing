@@ -7,7 +7,7 @@ const Asome = () => {
   return (
     <div className="conatiner mx-auto" id="about">
       <div className="flex ">
-        <div className="w-full relative xl:left-9 sm:left-0  lg:text-left xs:text-center">
+        <div className="w-full relative xl:start-9 sm:start-0  lg:text-start xs:text-center ps-20">
           <p className="md:text-7xl xs:text-5xl font-bold text-[#0000007e] py-2">
             {t("Awesome")}
           </p>

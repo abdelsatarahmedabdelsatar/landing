@@ -15,12 +15,12 @@ const Mission = () => {
   }, [isInView]);
   return (
     <div className="md:container mx-auto  px-4">
-      <div className="flex xl:text-left text-center items-center justify-center xs:flex-col  px-4 xl:flex-row ">
+      <div className="flex xl:text-start text-center items-center justify-center xs:flex-col  px-4 xl:flex-row ">
         <div className="md:w-[30%]">
           <div className="img__wrapper md:w-80 w-72 md:h-96 h-80 mt-16 relative">
             <img
               src=" ./mission.png"
-              className="absolute md:h-96 sm:h-80 md:w-80 w-72 left-6 top-3"
+              className="absolute md:h-96 sm:h-80 md:w-80 w-72 start-6 top-3"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ const Mission = () => {
           transition={{ duration: 0.6, ease: "easeIn" }}
           initial="hidden"
         >
-          <h2 className="font-bold text-5xl py-7">{t("Mission")}</h2>
+          <h2 className="font-bold text-5xl pb-14 py-1 md:pr-28">{t("Mission")}</h2>
 
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
             {t(
