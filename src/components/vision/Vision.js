@@ -1,9 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import "./Vision.css";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Vision = () => {
   const ref = useRef(null);
+  const { t, i18n } = useTranslation();
+
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   useEffect(() => {
@@ -33,7 +36,7 @@ const Vision = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
-          <h2 className="font-bold text-5xl py-7">Vision</h2>
+          <h2 className="font-bold text-5xl py-7">{t("Vision")}</h2>
           <main class="card-container xl:block hidden">
             <div class="card square-card">
               <div class="down">
@@ -50,21 +53,19 @@ const Vision = () => {
             </div>
           </main>
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
-            Our vision is to be at the forefront of clean energy adoption in the
-            agricultural sector, accelerating the transition towards sustainable
-            practices.
+            {t(
+              "Our vision is to be at the forefront of clean energy adoption in the agricultural sector, accelerating the transition towards sustainable practices."
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            We are inspired by and align with the noble efforts of His Highness
-            Sheikh Mohamed bin Zayed Al Nahyan and the UAE government ato reduce
-            CO2 emissions and promote the use of clean energy.
+            {t(
+              "We are inspired by and align with the noble efforts of His Highness Sheikh Mohamed bin Zayed Al Nahyan and the UAE government ato reduce CO2 emissions and promote the use of clean energy."
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            We envision a future where our livestock transportation services
-            contribute significantly to this nation-wide initiative, fostering a
-            greener agricultural landscape in the UAE. Our goal is to make a
-            lasting impact, creating a sustainable legacy for future generations
-            to inherit.
+            {t(
+              "We envision a future where our livestock transportation services contribute significantly to this nation-wide initiative, fostering a greener agricultural landscape in the UAE. Our goal is to make a lasting impact, creating a sustainable legacy for future generations to inherit."
+            )}
           </p>
           <img
             src=" ./vision2.png"

@@ -1,7 +1,12 @@
 {
+  "Awesome": "مذهل",
+  "Livestock": "الثروة الحيوانية",
+  "Transportation": "مواصلات",
   "Home": "الرئيسية",
   "Services": "الخدمات ",
   "About us": "من نحن ",
+  "GreenYard": "الفناء الأخضر",
+
   "Contact Us": "تواصل معنا",
   "The Green Yard": "الفناء الأخضر",
   "Our company provides comprehensive livestock logistics throughout the United Arab Emirates. We deliver safe and efficient animal transportation": "توفر شركتنا خدمات لوجستية شاملة للماشية في جميع أنحاء دولة الإمارات العربية المتحدة. نحن نقدم وسائل نقل آمنة وفعالة للحيوانات",
@@ -10,9 +15,7 @@
   "Different live stock": "مخزون حي مختلف",
   "Green Tecnology": "التكنولوجيا الصديقة للبيئة",
   "Faster delivery": "Faster delivery",
-  "Awesome": "",
-  "Livestock": "الثروة الحيوانية",
-  "Transportation": "مواصلات",
+
   "Vision": "رؤيتنا",
   "Our vision is to be at the forefront of clean energy adoption in the agricultural sector, accelerating the transition towards sustainable practices.": "رؤيتنا هي أن نكون في طليعة اعتماد الطاقة النظيفة في القطاع الزراعي، وتسريع التحول نحو الممارسات المستدامة.",
   "We are inspired by and align with the noble efforts of His Highness Sheikh Mohamed bin Zayed Al Nahyan and the UAE government ato reduce CO2 emissions and promote the use of clean energy.": "نحن نستلهم وننسجم مع الجهود النبيلة التي يبذلها صاحب السمو الشيخ محمد بن زايد آل نهيان وحكومة دولة الإمارات العربية المتحدة للحد من انبعاثات ثاني أكسيد الكربون وتعزيز استخدام الطاقة النظيفة.",
@@ -31,6 +34,7 @@
   "Saleh Amir Saleh Hallabi Almarri:": "صالح أمير صالح الحلبي المري",
   "P.O. Box: 43:": "ص.ب. الصندوق: 43",
   "Get In Touch": "ابقى على تواصل",
-  "Send Message to Us To Know More About Our Services": "أرسل رسالة إلينا لمعرفة المزيد عن خدماتنا",
+  "Send Message to Us": "أرسل رسالة إلينا",
+  "To Know More About Our Services": " لمعرفة المزيد عن خدماتنا",
   "Send Message ": "أرسل رسالة إلينا"
 }

@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import "./Services.css";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t, i18n } = useTranslation();
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -33,26 +36,26 @@ const Services = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
-          <h2 className="font-bold text-5xl py-7">Services</h2>
+          <h2 className="font-bold text-5xl py-7">{t("Services")}</h2>
           <main class="card-container  xl:block hidden">
             <div class="card ball-bouncing">
               <div class="ball"></div>
             </div>
           </main>
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
-            Our company provides comprehensive livestock logistics throughout
-            the United Arab Emirates
+            {t(
+              "Our company provides comprehensive livestock logistics throughout the United Arab Emirates"
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            We deliver safe and efficient animal transportation, including the
-            transfer of essential animal materials and nutrients. Our team
-            ensures smooth and stress-free livestock relocation within farms and
-            facilities,
+            {t(
+              "We deliver safe and efficient animal transportation, including the transfer of essential animal materials and nutrients. Our team ensures smooth and stress-free livestock relocation within farms and facilities,"
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            adhering to the highest standards of animal welfare. We are
-            committed to your livestock's well-being and strive to exceed your
-            service expectations.
+            {t(
+              "adhering to the highest standards of animal welfare. We are committed to your livestock's well-being and strive to exceed your service expectations."
+            )}
           </p>
         </motion.div>
         <div className="xl:block hidden w-[30%]">

@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./Experience.css";
 import animation1 from "../../images/Animation - 1707000674803.json";
+import { useTranslation } from "react-i18next";
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import Lottie from "lottie-react";
 const Experience = () => {
+  const { t, i18n } = useTranslation();
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -28,7 +31,7 @@ const Experience = () => {
         transition={{ duration: 0.6, ease: "easeIn" }}
       >
         <h2 className="text-white lg:text-7xl xs:text-5xl font-bold pt-12 pb-6  ">
-          Experience
+          {t("Experience")}
         </h2>
         <Lottie
           className="contact__animation"
@@ -36,14 +39,9 @@ const Experience = () => {
           style={{ height: 20 }}
         />
         <p className=" py-8 lg:text-2xl xs:text-xl text-white font-bold leading-loose">
-          We are honored to have established a significant partnership with the
-          Government of Sharjah Al-Sajaa livestock market, serving as their
-          principal provider for livestock transportation services This
-          collaboration has fortified our experience in the field, allowing us
-          to deliver superior service and meet the specific needs of one of the
-          region's most distinguished livestock markets. We are proud of our
-          proven track record and continue to uphold our commitment to
-          exceptional service and animal welfare.
+          {t(
+            "We are honored to have established a significant partnership with the Government of Sharjah Al-Sajaa livestock market, serving as their principal provider for livestock transportation services This collaboration has fortified our experience in the field, allowing us to deliver superior service and meet the specific needs of one of the region's most distinguished livestock markets. We are proud of our proven track record and continue to uphold our commitment to exceptional service and animal welfare."
+          )}
         </p>
       </motion.div>
     </div>

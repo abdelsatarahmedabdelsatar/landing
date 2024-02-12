@@ -1,8 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Mission = () => {
   const ref = useRef(null);
+  const { t, i18n } = useTranslation();
+
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   useEffect(() => {
@@ -32,23 +35,22 @@ const Mission = () => {
           transition={{ duration: 0.6, ease: "easeIn" }}
           initial="hidden"
         >
-          <h2 className="font-bold text-5xl py-7">Mission</h2>
+          <h2 className="font-bold text-5xl py-7">{t("Mission")}</h2>
 
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
-            Our mission is to revolutionize the agricultural sector by
-            pioneering the use of electric vehicles for livestock
-            transportation. We aim to create a healthier and more efficient
-            environment for both individuals and animals.
+            {t(
+              "Our mission is to revolutionize the agricultural sector by pioneering the use of electric vehicles for livestock transportation. We aim to create a healthier and more efficient environment for both individuals and animals."
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            By harnessing the power of sustainable technology, we seek to reduce
-            carbon emissions and contribute to a greener future, while ensuring
-            the utmost care for the animals in transit.
+            {t(
+              "By harnessing the power of sustainable technology, we seek to reduce carbon emissions and contribute to a greener future, while ensuring the utmost care for the animals in transit."
+            )}
           </p>
           <p className=" text-1xl text-[#707070] font-semibold py-1 md:pr-28">
-            Our commitment extends beyond mere transportation - we strive to
-            drive innovation, promote animal welfare, and foster a sustainable
-            future for the agricultural industry
+            {t(
+              "Our commitment extends beyond mere transportation - we strive to drive innovation, promote animal welfare, and foster a sustainable future for the agricultural industry"
+            )}
           </p>
           <img src=" ./mission2.png" className="absolute right-0 bottom-0" />
         </motion.div>

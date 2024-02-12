@@ -1,13 +1,16 @@
 import logo from "./../../images/tree_icon.png";
 import { useContext } from "react";
 import langContext from "../../context";
-
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 function Navbar() {
   // const [lang,setLang] = useState('en');
   const { lang, updateLang } = useContext(langContext);
+  const { t, i18n } = useTranslation();
   const changeLang = (lng) => {
     localStorage.setItem("lang", lng == "en" ? "ar" : "en");
     lng == "en" ? updateLang("ar") : updateLang("en");
+    i18n.changeLanguage(lng);
     console.log(lang);
   };
 
@@ -16,7 +19,7 @@ function Navbar() {
   };
   return (
     <nav className="bg-[#06060696] p-3 fixed top-0 z-50 w-full shadow-xl">
-      <div className=" mx-auto flex justify-between items-center">
+      <div className=" mx-auto flex justify-between items-center container  ">
         <div className="flex text-white">
           <p className=" pr-12 font-bold flex justify-between">
             <svg
@@ -114,7 +117,7 @@ function Navbar() {
           >
             <li>
               <span
-                onClick={() => changeLang("en")}
+                onClick={() => changeLang("ar")}
                 className="cursor-pointer block px-4 py-2 text-gray-800 hover:bg-gray-200"
               >
                 العربية
@@ -122,7 +125,7 @@ function Navbar() {
             </li>
             <li>
               <span
-                onClick={() => changeLang("ar")}
+                onClick={() => changeLang("en")}
                 className="cursor-pointer block px-4 py-2 text-gray-800 hover:bg-gray-200"
               >
                 English

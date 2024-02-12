@@ -6,12 +6,15 @@ import watsapp from "../../images/Animation - 1707000348040.json";
 import location from "../../images/Animation - 1707000451498.json";
 import emailjs from "emailjs-com";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
   const form = useRef();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const { t, i18n } = useTranslation();
+
   const sendMail = (e) => {
     e.preventDefault();
     // if (
@@ -46,10 +49,14 @@ const ContactUs = () => {
   return (
     <div id="contact" className="flex justify-between lg:flex-row  xs:flex-col">
       <div className="contactLeft__section contactLeft__section w-full text-center py-10  ">
-        <h2 className="font-extrabold text-6xl py-4 text-gray-100">Contacts</h2>
-        <p className="font-bold text-3xl py-2 text-gray-200">Company owner:</p>
+        <h2 className="font-extrabold text-6xl py-4 text-gray-100">
+          {t("Contacts")}
+        </h2>
+        <p className="font-bold text-3xl py-2 text-gray-200">
+          {t("Company owner:")}
+        </p>
         <p className="font-bold text-2xl text-gray-200 py-2">
-          Saleh Amir Saleh Hallabi Almarri
+          {t("Saleh Amir Saleh Hallabi Almarri")}
         </p>
         <p className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
           <Lottie
@@ -57,7 +64,7 @@ const ContactUs = () => {
             animationData={location}
             style={{ height: 40 }}
           />
-          P.O. Box: 43
+          {t("P.O. Box: 43")}
         </p>
         <p className="font-bold text-2xl py-2  text-gray-200 flex items-center justify-center">
           <Lottie
@@ -78,11 +85,11 @@ const ContactUs = () => {
       </div>
       <div className=" contactRight__section w-full py-10 text-center text-white">
         <h2 className="font-extrabold text-6xl py-4 px-6 text-gray-100">
-          Get In Touch
+          {t("Get In Touch")}
         </h2>
         <p className="font-bold text-xl py-2 text-gray-200">
-          Send Message to Us
-          <br /> To Know More About Our Services
+          {t("Send Message to Us")}
+          <br /> {t("To Know More About Our Services")}
         </p>
         <div className="flex justify-around py-10">
           <form ref={form} onSubmit={sendMail}>
@@ -114,7 +121,7 @@ const ContactUs = () => {
               type="submit"
               className="bg-[#52be2e67] p-3 px-6 rounded-3xl"
             >
-              Send Message
+              {t("Send Message")}
             </button>
           </form>
           <Lottie
