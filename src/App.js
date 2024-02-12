@@ -1,5 +1,6 @@
 import "./App.css";
 
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useContext, useState } from "react";
 import { useEffect } from "react";
@@ -13,27 +14,26 @@ function App() {
   let [loading, setLoading] = useState(false);
   let [visible, setVisible] = useState(false);
 
+=======
+import { useState } from "react";
+import { useEffect } from "react";
+import { HashLoader } from "react-spinners";
+
+import { LangContextProvider } from './context/index';
+import Root from "./components/Root";
+
+function App() {
+  let [loading, setLoading] = useState(false);
+  
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
-    });
-  }, []);
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
+
   return (
     <div>
       {loading ? (
@@ -42,6 +42,7 @@ function App() {
         </div>
       ) : (
         <>
+<<<<<<< HEAD
           <LangContextProvider>
             {/* <Router>
             <Routes>
@@ -64,6 +65,10 @@ function App() {
                 />
               </button>
             ) : null}
+=======
+        <LangContextProvider>
+              <Root/>
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
           </LangContextProvider>
         </>
       )}

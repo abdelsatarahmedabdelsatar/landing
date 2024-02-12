@@ -1,17 +1,31 @@
 import logo from "./../../images/tree_icon.png";
 import { useContext } from "react";
 import langContext from "../../context";
+<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 function Navbar() {
   // const [lang,setLang] = useState('en');
   const { lang, updateLang } = useContext(langContext);
   const { t, i18n } = useTranslation();
+=======
+import { useTranslation } from 'react-i18next';
+
+
+function Navbar() {
+  // const [lang,setLang] = useState('en');
+  const { i18n } = useTranslation();
+  const { updateLang } = useContext(langContext);
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
   const changeLang = (lng) => {
-    localStorage.setItem("lang", lng == "en" ? "ar" : "en");
     lng == "en" ? updateLang("ar") : updateLang("en");
+<<<<<<< HEAD
     i18n.changeLanguage(lng);
     console.log(lang);
+=======
+    i18n.changeLanguage(lng).then();
+
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
   };
 
   const toggleLang = () => {

@@ -36,10 +36,17 @@ const Services = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
+<<<<<<< HEAD
           <h2 className="font-bold text-5xl py-7">{t("Services")}</h2>
           <main class="card-container  xl:block hidden">
             <div class="card ball-bouncing">
               <div class="ball"></div>
+=======
+          <h2 className="font-bold text-5xl py-7">Services</h2>
+          <main className="card-container  xl:block hidden">
+            <div className="card ball-bouncing">
+              <div className="ball"></div>
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
             </div>
           </main>
           <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">

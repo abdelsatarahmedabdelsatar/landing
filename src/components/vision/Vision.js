@@ -36,6 +36,7 @@ const Vision = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
+<<<<<<< HEAD
           <h2 className="font-bold text-5xl py-7">{t("Vision")}</h2>
           <main class="card-container xl:block hidden">
             <div class="card square-card">
@@ -45,6 +46,17 @@ const Vision = () => {
                     <div class="rotate-in">
                       <div class="rotate-out">
                         <div class="square"></div>
+=======
+          <h2 className="font-bold text-5xl py-7">Vision</h2>
+          <main className="card-container xl:block hidden">
+            <div className="card square-card">
+              <div className="down">
+                <div className="up">
+                  <div className="squeeze">
+                    <div className="rotate-in">
+                      <div className="rotate-out">
+                        <div className="square"></div>
+>>>>>>> b7eba8af2b5dd4e7ac7b9022adcde0526f3ec4ee
                       </div>
                     </div>
                   </div>
