@@ -38,9 +38,9 @@ const Services = () => {
         >
 
           <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Services")}</h2>
-          <main class="card-container  xl:block hidden">
-            <div class="card ball-bouncing">
-              <div class="ball"></div>
+          <main className="card-container  xl:block hidden">
+            <div className="card ball-bouncing">
+              <div className="ball"></div>
 
             </div>
           </main>

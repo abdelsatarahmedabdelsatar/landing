@@ -16,12 +16,14 @@ import { useEffect } from "react";
 import scrollToTop from "../../images/scrollToTop.json";
 import { useContext } from 'react';
 import LangContext from "../../context";
+import { useTranslation } from 'react-i18next';
+
 
 
 function Root() {
   let [visible, setVisible] = useState(false);
   const { lang } = useContext(LangContext);
-
+  const {i18n} = useTranslation()
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -38,8 +40,12 @@ function Root() {
     });
   };
 
+  const unShowLangs = () => {
+    document.getElementById('langs').classList.add('hidden');
+  }
+
   return (
-    <>
+    <div>
       {/* <Router>
             <Routes>
               <Route path="/" Component={Home} />
@@ -49,7 +55,7 @@ function Root() {
             </Routes>
           </Router> */}
       <Navbar />
-      <div dir={lang=='ar'?'rtl':'ltr'}>
+      <div dir={i18n.language=='ar'?'rtl':'ltr'} onClick={unShowLangs}>
       <Home />
       <Categories />
       <Asome />
@@ -72,7 +78,7 @@ function Root() {
         </button>
       ) : null}
       </div>
-    </>
+    </div>
   );
 }
 

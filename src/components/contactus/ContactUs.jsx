@@ -17,33 +17,37 @@ const ContactUs = () => {
 
   const sendMail = (e) => {
     e.preventDefault();
-    // if (
-    //   nameCheck &&
-    //   mailCheck &&
-    //   messageCheck &&
-    //   document.getElementById("name").value !== "" &&
-    //   document.getElementById("email").value !== ""
-    // ) {
-    emailjs
-      .sendForm(
-        "service_s5kj2ws",
-        "template_atx1sut",
-        form.current,
-        "7Npc3h8KyBV8JApl0"
-      )
-      .then(
-        () => {
-          // setTimeout(function () {
-          // window.location.href = "/";
-          // }, 2500);
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
-    setEmail("");
-    setMessage("");
-    setName("");
+    const parError = document.getElementById("error");
+    if (
+      email != "" &&
+      name != "" &&
+      message != "" &&
+      /^[a-zA-z]+[0-9]+@[a-z]+\.com/.test(email)
+    ) {
+      emailjs
+        .sendForm(
+          "service_s5kj2ws",
+          "template_atx1sut",
+          form.current,
+          "7Npc3h8KyBV8JApl0"
+        )
+        .then(
+          () => {
+            parError.innerText = "";
+            setTimeout(function () {
+            window.location.href = "/";
+            }, 1000);
+          },
+          (error) => {
+            alert(error.text);
+          }
+        );
+      setEmail("");
+      setMessage("");
+      setName("");
+    } else {
+      parError.innerText = t('contactError');
+    }
   };
 
   return (
@@ -115,8 +119,9 @@ const ContactUs = () => {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="block mx-auto my-3 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
+              className="block mx-auto my-1 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
+            <p id="error" className="text-red-400 py-1"></p>
             <button
               type="submit"
               className="bg-[#52be2e67] p-3 px-6 rounded-3xl"

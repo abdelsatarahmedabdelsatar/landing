@@ -39,5 +39,6 @@
   "name": "name",
   "email": "email",
   "message": "message",
-  "footer":"This Website Created by"
+  "footer":"This Website Created by",
+  "contactError":"please enter valid data"
 }

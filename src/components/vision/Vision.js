@@ -37,14 +37,14 @@ const Vision = () => {
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
         <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Vision")}</h2>
-          <main class="card-container xl:block hidden">
-            <div class="card square-card">
-              <div class="down">
-                <div class="up">
-                  <div class="squeeze">
-                    <div class="rotate-in">
-                      <div class="rotate-out">
-                        <div class="square"></div>
+          <main className="card-container xl:block hidden">
+            <div className="card square-card">
+              <div className="down">
+                <div className="up">
+                  <div className="squeeze">
+                    <div className="rotate-in">
+                      <div className="rotate-out">
+                        <div className="square"></div>
                       </div>
                     </div>
                   </div>
