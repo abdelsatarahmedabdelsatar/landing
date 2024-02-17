@@ -19,9 +19,9 @@ const ContactUs = () => {
     e.preventDefault();
     const parError = document.getElementById("error");
     if (
-      email != "" &&
-      name != "" &&
-      message != "" &&
+      email !== "" &&
+      name !== "" &&
+      message !== "" &&
       /^[a-zA-z]+[0-9]+@[a-z]+\.com/.test(email)
     ) {
       emailjs
@@ -33,7 +33,7 @@ const ContactUs = () => {
         )
         .then(
           () => {
-            parError.innerText = "";
+            parError.style.display = 'none' ;
             setTimeout(function () {
             window.location.href = "/";
             }, 1000);
@@ -46,7 +46,7 @@ const ContactUs = () => {
       setMessage("");
       setName("");
     } else {
-      parError.innerText = t('contactError');
+      parError.style.display = 'block' ;
     }
   };
 
@@ -62,30 +62,30 @@ const ContactUs = () => {
         <p className="font-bold text-2xl text-gray-200 py-2">
           {t("Saleh Amir Saleh Hallabi Almarri")}
         </p>
-        <p className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
+        <div className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
           <Lottie
             className="contact__animation"
             animationData={location}
             style={{ height: 40 }}
           />
           {t("P.O. Box: 43")}
-        </p>
-        <p className="font-bold text-2xl py-2  text-gray-200 flex items-center justify-center">
+        </div>
+        <div className="font-bold text-2xl py-2  text-gray-200 flex items-center justify-center">
           <Lottie
             className="contact__animation"
             animationData={watsapp}
             style={{ height: 40 }}
           />
           +971501686816
-        </p>
-        <p className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
+        </div>
+        <div className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
           <Lottie
             className="contact__animation"
             animationData={gmail}
             style={{ height: 40 }}
           />
           salehallabi@gmail.com :
-        </p>
+        </div>
       </div>
       <div className=" contactRight__section w-full py-10 text-center text-white">
         <h2 className="font-extrabold text-6xl py-4 px-6 text-gray-100">
@@ -121,7 +121,7 @@ const ContactUs = () => {
               onChange={(e) => setMessage(e.target.value)}
               className="block mx-auto my-1 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
-            <p id="error" className="text-red-400 py-1"></p>
+            <p id="error" className="text-red-400 py-1">{t('contactError')}</p>
             <button
               type="submit"
               className="bg-[#52be2e67] p-3 px-6 rounded-3xl"

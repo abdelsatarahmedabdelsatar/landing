@@ -39,12 +39,12 @@ const Services = () => {
 
           <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Services")}</h2>
           <main className="card-container  xl:block hidden">
-            <div className="card ball-bouncing">
-              <div className="ball"></div>
+            <div className={`card ball-bouncing ${i18n.language == 'ar'? 'transform -scale-x-100':''}`}>
+              <div className='ball'></div>
 
             </div>
           </main>
-          <p className=" text-2xl text-[#707070] font-semibold py-1 md:pr-28">
+          <p className="text-2xl text-[#707070] font-semibold py-1 md:pr-28">
             {t(
               "Our company provides comprehensive livestock logistics throughout the United Arab Emirates"
             )}
@@ -67,7 +67,7 @@ const Services = () => {
         </div>
         <img
           src=" ./services1.png"
-          className="absolute right-[16rem] top-[-80px] z-0 sm:hidden   xl:block"
+          className={`absolute end-[16rem] top-[-80px] z-0 sm:hidden   xl:block ${i18n.language == 'ar'? 'transform -scale-x-100':'' }`}
         />
       </div>
     </div>
