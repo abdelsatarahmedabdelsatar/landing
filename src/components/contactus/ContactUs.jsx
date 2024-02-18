@@ -15,7 +15,7 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const { t } = useTranslation();
 
-  const sendMail = (e) => {
+  const sendMail = (e) => { 
     e.preventDefault();
     const parError = document.getElementById("error");
     if (
@@ -26,10 +26,10 @@ const ContactUs = () => {
     ) {
       emailjs
         .sendForm(
-          "service_s5kj2ws",
-          "template_atx1sut",
+          "service_2zi8err",
+          "template_yrsblyf",
           form.current,
-          "7Npc3h8KyBV8JApl0"
+          "0Jh1jLkKgBrlFYTvw"
         )
         .then(
           () => {
@@ -46,6 +46,7 @@ const ContactUs = () => {
       setMessage("");
       setName("");
     } else {
+      parError.innerText = t("contactError");
       parError.style.display = "block";
     }
   };
@@ -116,7 +117,7 @@ const ContactUs = () => {
               className="block mx-auto my-1 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
             <p id="error" className="text-red-400 py-1">
-              {t("contactError")}
+              
             </p>
             <button
               type="submit"
