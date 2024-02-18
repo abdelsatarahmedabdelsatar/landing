@@ -33,9 +33,9 @@ const ContactUs = () => {
         )
         .then(
           () => {
-            parError.style.display = 'none' ;
+            parError.style.display = "none";
             setTimeout(function () {
-            window.location.href = "/";
+              window.location.href = "/";
             }, 1000);
           },
           (error) => {
@@ -46,7 +46,7 @@ const ContactUs = () => {
       setMessage("");
       setName("");
     } else {
-      parError.style.display = 'block' ;
+      parError.style.display = "block";
     }
   };
 
@@ -56,19 +56,13 @@ const ContactUs = () => {
         <h2 className="font-extrabold text-6xl py-4 text-gray-100">
           {t("Contacts")}
         </h2>
-        <p className="font-bold text-3xl py-2 text-gray-200">
-          {t("Company owner:")}
-        </p>
-        <p className="font-bold text-2xl text-gray-200 py-2">
-          {t("Saleh Amir Saleh Hallabi Almarri")}
-        </p>
         <div className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
           <Lottie
             className="contact__animation"
             animationData={location}
             style={{ height: 40 }}
           />
-          {t("P.O. Box: 43")}
+          P.O. Box: 43
         </div>
         <div className="font-bold text-2xl py-2  text-gray-200 flex items-center justify-center">
           <Lottie
@@ -76,7 +70,7 @@ const ContactUs = () => {
             animationData={watsapp}
             style={{ height: 40 }}
           />
-          +971501686816
+          +971542389928
         </div>
         <div className="font-bold text-2xl py-2 text-gray-200 flex items-center justify-center">
           <Lottie
@@ -84,7 +78,7 @@ const ContactUs = () => {
             animationData={gmail}
             style={{ height: 40 }}
           />
-          salehallabi@gmail.com :
+          support@thegreenyard.online
         </div>
       </div>
       <div className=" contactRight__section w-full py-10 text-center text-white">
@@ -121,7 +115,9 @@ const ContactUs = () => {
               onChange={(e) => setMessage(e.target.value)}
               className="block mx-auto my-1 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
-            <p id="error" className="text-red-400 py-1">{t('contactError')}</p>
+            <p id="error" className="text-red-400 py-1">
+              {t("contactError")}
+            </p>
             <button
               type="submit"
               className="bg-[#52be2e67] p-3 px-6 rounded-3xl"

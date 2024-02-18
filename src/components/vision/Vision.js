@@ -15,7 +15,7 @@ const Vision = () => {
     }
   }, [isInView]);
   return (
-    <div className="md:container  mx-auto   px-4 py-4">
+    <div className="md:container  mx-auto   px-6 py-4">
       <div className="flex xl:text-start  text-center items-center justify-center  xs:flex-col  md:px-4 xl:flex-row ">
         <div className="md:w-[30%]">
           <div className="img__wrapper md:w-80 w-72 md:h-96 h-80 mt-16  relative mx-auto">
@@ -26,7 +26,7 @@ const Vision = () => {
           </div>
         </div>
         <motion.div
-          className="md:w-[70%] pt-11 relative  md:ml-11 xs:mx-3"
+          className="md:w-[70%] pt-11 mt-6 relative  md:ml-11 xs:mx-3"
           variants={{
             hidden: { opacity: 0, y: 75 },
             visible: { opacity: 1, y: 0 },
@@ -36,7 +36,7 @@ const Vision = () => {
           animate={mainControls}
           transition={{ duration: 0.6, ease: "easeIn" }}
         >
-        <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Vision")}</h2>
+          <h2 className="font-bold text-5xl py-1 md:pr-28">{t("Vision")}</h2>
           <main className="card-container xl:block hidden">
             <div className="card square-card">
               <div className="down">

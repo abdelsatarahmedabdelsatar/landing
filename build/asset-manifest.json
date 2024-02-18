@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bd9a6cd.css",
-    "main.js": "/static/js/main.d57261d5.js",
+    "main.css": "/static/css/main.b69a17ae.css",
+    "main.js": "/static/js/main.e2d644f7.js",
     "static/js/787.313bdbd8.chunk.js": "/static/js/787.313bdbd8.chunk.js",
     "static/media/home_back.png": "/static/media/home_back.3efe0c8cdbb755ea1d14.png",
     "static/media/sheeps.jpg": "/static/media/sheeps.d91a7dea8833751bfec2.jpg",
     "static/media/112.png": "/static/media/112.50b0b4a53771c99ed7b8.png",
     "static/media/222.png": "/static/media/222.ff7dfcea629a9576b4f2.png",
+    "static/media/services2.png": "/static/media/services2.70a8eaca02467a61eb2f.png",
     "static/media/122.png": "/static/media/122.bbb92e73b68c11a699a7.png",
     "static/media/3.png": "/static/media/3.265830531f6a3a35b257.png",
-    "static/media/services2.png": "/static/media/services2.b1a2a91686cac09213ea.png",
     "static/media/4.png": "/static/media/4.a01447dcb9f0711178bb.png",
     "static/media/tree_icon.png": "/static/media/tree_icon.05172f45d19c778b3346.png",
+    "static/media/sun-tornado.svg": "/static/media/sun-tornado.aa69cee9807ccef5886d.svg",
+    "static/media/liquid-cheese.svg": "/static/media/liquid-cheese.d536655ccfc38cfdc940.svg",
+    "static/media/abstract-envelope.svg": "/static/media/abstract-envelope.4b0ca335e6dfb7f1475c.svg",
     "index.html": "/index.html",
-    "main.5bd9a6cd.css.map": "/static/css/main.5bd9a6cd.css.map",
-    "main.d57261d5.js.map": "/static/js/main.d57261d5.js.map",
+    "main.b69a17ae.css.map": "/static/css/main.b69a17ae.css.map",
+    "main.e2d644f7.js.map": "/static/js/main.e2d644f7.js.map",
     "787.313bdbd8.chunk.js.map": "/static/js/787.313bdbd8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bd9a6cd.css",
-    "static/js/main.d57261d5.js"
+    "static/css/main.b69a17ae.css",
+    "static/js/main.e2d644f7.js"
   ]
 }

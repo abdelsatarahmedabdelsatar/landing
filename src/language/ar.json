@@ -8,7 +8,7 @@
   "GreenYard": "الفناء الأخضر",
 
   "Contact Us": "تواصل معنا",
-  "The Green Yard": "الفناء الأخضر",
+  "The Green Yard": "الساحة الأخضر",
   "Our company provides comprehensive livestock logistics throughout the United Arab Emirates. We deliver safe and efficient animal transportation": "توفر شركتنا خدمات لوجستية شاملة للماشية في جميع أنحاء دولة الإمارات العربية المتحدة. نحن نقدم وسائل نقل آمنة وفعالة للحيوانات",
   "ٌRead More": "المزيد",
   "24 hour service": "خدمة 24 ساعة",
@@ -40,6 +40,6 @@
   "name": "الإسم",
   "email": "البريد الإلكتروني",
   "message": "رسالتك",
-  "footer":"هذا الموقع تم إنشاؤه بواسطة",
-  "contactError":"يرجي إدخال بيانات صحيحة"
+  "footer": "هذا الموقع تم إنشاؤه بواسطة",
+  "contactError": "يرجي إدخال بيانات صحيحة"
 }
