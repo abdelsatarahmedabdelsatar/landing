@@ -89,7 +89,7 @@ const ContactUs = () => {
           {t("Send Message to Us")}
           <br /> {t("To Know More About Our Services")}
         </p>
-        <div className="flex justify-around py-10">
+        <div className=" flex sm:flex-row xs:flex-col justify-around py-10">
           <form ref={form} onSubmit={sendMail}>
             <input
               type="text"
