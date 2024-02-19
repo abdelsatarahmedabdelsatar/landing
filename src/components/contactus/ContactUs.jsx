@@ -15,15 +15,10 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const { t } = useTranslation();
 
-  const sendMail = (e) => { 
+  const sendMail = (e) => {
     e.preventDefault();
     const parError = document.getElementById("error");
-    if (
-      email !== "" &&
-      name !== "" &&
-      message !== "" &&
-      /^[a-zA-z]+[0-9]+@[a-z]+\.com/.test(email)
-    ) {
+    if (email !== "" && name !== "" && message !== "") {
       emailjs
         .sendForm(
           "service_2zi8err",
@@ -116,9 +111,7 @@ const ContactUs = () => {
               onChange={(e) => setMessage(e.target.value)}
               className="block mx-auto my-1 p-3 rounded-xl focus:outline-none border-[#1a332a] w-64 bg-[#6dcaa54f] placeholder:text-white"
             />
-            <p id="error" className="text-red-400 py-1">
-              
-            </p>
+            <p id="error" className="text-red-400 hidden py-1"></p>
             <button
               type="submit"
               className="bg-[#52be2e67] p-3 px-6 rounded-3xl"

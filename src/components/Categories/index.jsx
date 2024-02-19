@@ -8,7 +8,7 @@ function Categories() {
   const catArr = [
     { img: img, title: "24 hour service" },
     { img: img2, title: "Different live stock" },
-    { img: img3, title: "Green Tecnology" },
+    { img: img3, title: "Green Technology" },
     { img: img4, title: "Faster delivery" },
   ];
   return (

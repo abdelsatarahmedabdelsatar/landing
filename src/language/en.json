@@ -1,5 +1,4 @@
 {
-
   "Home": "Home",
   "Services": "Services ",
   "About us": "About us",
@@ -10,7 +9,7 @@
   "ٌRead More": "Read More",
   "24 hour service": "24 hour service",
   "Different live stock": "Different live stock",
-  "Green Tecnology": "Green Tecnology",
+  "Green Technology": "Green Tecnology",
   "Faster delivery": "Faster delivery",
   "Awesome": "Awesome",
   "Livestock": "Livestock",
@@ -39,6 +38,6 @@
   "name": "name",
   "email": "email",
   "message": "message",
-  "footer":"This Website Created by",
-  "contactError":"please enter valid data"
+  "footer": "This Website Created by",
+  "contactError": "please enter valid data"
 }
